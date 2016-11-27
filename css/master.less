@@ -21,7 +21,7 @@
 .header-background-image {
   background: url('../IMG/image.jpg') no-repeat;
   background-position-x:-2px;
-  background-position-y:0px;
+  background-position-y:-6px;
   background-size: 640px 520px;
 }
 
@@ -36,7 +36,9 @@
 body {
   line-height: 1.5em;
 }
-
+* {
+  box-sizing: border-box;
+}
 
 
 
@@ -58,11 +60,15 @@ header {
   padding: 2px;
   .logo {
     .left;
-    height:78px;
+    height:74px;
     width:120px;
     border:1px solid yellow;
     .header-background-image;
-    .left
+    .left;
+    transition: transform 5s;
+  }
+  .logo:hover {
+    transform:rotate(360deg);
   }
   .header-input {
     height:68px;
@@ -141,30 +147,54 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
-  .image-text-wrapper {
-    height: 10vh;
-    width: 28vw;
-    // height: 106px;
-    // width: 288px;
-    color:white;
-    border: 1px solid yellow;
+  color:white;
+    .home-image-text-container{
     position: absolute;
-    text-align: center;
+    top:10%;
+    left:15%;
+    height: 30vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    top:96px;
-    left:44px;
-  }
-  #shop-now {
-    height:40px;
-    width: 50px;
-    border:3px solid orange;
+    justify-content: space-around;
+      .image-text-wrapper {
+      height: 10vh;
+      width: 28vw;
+      // color:white;
+      border: 1px solid yellow;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition:transform 5s,transform 2s,transform 3s, 3s;
+    }
+    .image-text-wrapper:hover {
+      transform:rotate(360deg) translateY(50px) scale(1.5);
+      color:gold;
+    }
+    #shipping {
+      // border:3px solid lightblue;
+      width: 30vw;
+      height: 7vh;
+      text-align: center;
+      margin-top: 15px;
+    }
+    #shop-now {
+      height:5vh;
+      width: 28vw;
+      border:3px solid orange;
+      text-align: center;
+      transition:transform 1s;
+    }
+    #shop-now:hover {
+      // transform:rotate(360deg);
+      color:yellow;
+      font-weight: bolder;
+    }
   }
 }
-
-
 
 
 
