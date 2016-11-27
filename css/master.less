@@ -1,0 +1,200 @@
+// VARIABLES
+// =================================================
+@color : green;
+
+
+
+
+// ====================================================
+
+// CLASSES FOR LATER USE
+// =====================================================
+.max-width {
+  width: 100%;
+}
+.left {
+  float:left;
+}
+.right {
+  float: right;
+}
+.header-background-image {
+  background: url('../IMG/image.jpg') no-repeat;
+  background-position-x:-2px;
+  background-position-y:0px;
+  background-size: 640px 520px;
+}
+
+
+
+
+// =========================================================
+
+
+// LESS CODE
+// ===================================================================================================================================================
+body {
+  line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+// =================== LESS for the header===========================
+#top {
+  text-align: center;
+  background: salmon;
+  color:white;
+}
+header {
+  position: relative;
+  .max-width;
+  height: 80px;
+  border:1px solid black;
+  padding: 2px;
+  .logo {
+    .left;
+    height:78px;
+    width:120px;
+    border:1px solid yellow;
+    .header-background-image;
+    .left
+  }
+  .header-input {
+    height:68px;
+    width:40%;
+    font-size:40px;
+    margin-top: 3px auto;
+    padding: 2px 2px 2px 2px;
+    float: left;
+  }
+  .login-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .user-icon {
+      position: absolute;
+      right:80px;
+      width:40px;
+      height: 50px;
+      background: url('../IMG/my-icons-collection/svg/social.svg')no-repeat;
+      border: 5px solid black;
+      border-radius: 12px;
+    }
+    #login {
+      position: absolute;
+      top:18px;
+      right:135px;
+      }
+  }
+  .cart-container {
+    position: absolute;
+    right:15px;
+    height: 50px;
+    width: 40px;
+    background: url('../IMG/shopping-cart.svg')
+  }
+}
+
+// NAVBAR DIRECTIVE
+// ==========================
+.nav-container {
+  width: 100%;
+  height: 50px;
+  background: salmon;
+  border: 1px solid red;
+  position:relative;
+  .list {
+    margin: auto;
+    height: 50px;
+    width: 70%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+// ===========================
+
+
+
+
+// =================== LESS for the header===========================
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// HOME PAGE/STATE
+// ===============================================
+.home-image-container {
+  width: 100%;
+  height: 40vh;
+  background:url('../IMG/phuket.jpg')no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  .image-text-wrapper {
+    height: 10vh;
+    width: 28vw;
+    // height: 106px;
+    // width: 288px;
+    color:white;
+    border: 1px solid yellow;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:96px;
+    left:44px;
+  }
+  #shop-now {
+    height:40px;
+    width: 50px;
+    border:3px solid orange;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERIES
+// ===============================================================================================================================
+
+
+
+
+
+// MEDIAQUERY FOR HEADER
+@media (max-width:500px){
+  .header-input{
+    display: none;
+  }
+}
+// media query for image-text-wrapper
+@media (max-width:405px){
+  .image-text-wrapper {
+    height: 76px;
+    width: 88px;
+  }
+}
