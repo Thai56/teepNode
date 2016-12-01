@@ -24,9 +24,10 @@
   background-position-y:-6px;
   background-size: 640px 520px;
 }
-
-
-
+img {
+  height:500px;
+  width: 500px;
+}
 
 // =========================================================
 
@@ -129,78 +130,51 @@ header {
     color: white;
   }
 }
-// ===========================
-
-
-
-
-// =================== LESS for the header===========================
-
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// HOME PAGE/STATE
-// ===============================================
-.home-image-container {
-  width: 100%;
-  height: 40vh;
-  background:url('../IMG/phuket.jpg')no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color:white;
-    .home-image-text-container{
-    position: absolute;
-    top:10%;
-    left:15%;
-    height: 30vh;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-      .image-text-wrapper {
-      height: 10vh;
-      width: 28vw;
-      // color:white;
-      border: 1px solid yellow;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition:transform 5s,transform 2s,transform 3s, 3s;
-    }
-    .image-text-wrapper:hover {
-      transform:rotate(360deg) translateY(50px) scale(1.5);
-      color:gold;
-    }
-    #shipping {
-      // border:3px solid lightblue;
-      width: 30vw;
-      height: 7vh;
-      text-align: center;
-      margin-top: 15px;
-    }
-    #shop-now {
-      height:5vh;
-      width: 28vw;
-      border:3px solid orange;
-      text-align: center;
-      transition:transform 1s;
-    }
-    #shop-now:hover {
-      // transform:rotate(360deg);
-      color:yellow;
-      font-weight: bolder;
-    }
-  }
+// nav dropdown products
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding:16px;
+  font-size:16px;
+  border:none;
+  cursor: pointer;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
 
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+// ===========================
 
 
 

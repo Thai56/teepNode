@@ -1,0 +1,122 @@
+/*original HOME PAGE/STATE*/
+/*// =================== LESS for the header===========================*/
+
+/*TMPLATE FOR THE CSS/LESS UNDERNEATH*/
+/*=======================================*/
+/*<!-- <section class='home-image-container'>
+  <div class="home-image-text-container">
+    <div class="image-text-wrapper">
+      20% off site wide
+    </div>
+    <div id='shipping'>Free Shipping worldwide</div>
+    <div id='shop-now'><a>Shop Now</a></div>
+  </div>
+</section> -->*/
+
+
+
+
+
+/*// HOME PAGE/STATE*/
+/*// ===============================================*/
+
+// .home-image-container {
+//   width: 100%;
+//   height: 50vh;
+//   // background:url('../IMG/phuket.jpg')no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   position: relative;
+//   color:white;
+  //   .home-image-text-container{
+  //   position: absolute;
+  //   top:10%;
+  //   left:15%;
+  //   height: 30vh;
+  //   width: 30vw;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: space-around;
+  //     .image-text-wrapper {
+  //     height: 10vh;
+  //     width: 28vw;
+  //     // color:white;
+  //     border: 1px solid yellow;
+  //     text-align: center;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //     transition:transform 5s,transform 2s,transform 3s, 3s;
+  //   }
+  //   .image-text-wrapper:hover {
+  //     transform:rotate(360deg) translateY(50px) scale(1.5);
+  //     color:gold;
+  //   }
+  //   #shipping {
+  //     // border:3px solid lightblue;
+  //     width: 30vw;
+  //     height: 7vh;
+  //     text-align: center;
+  //     margin-top: 15px;
+  //   }
+  //   #shop-now {
+  //     height:5vh;
+  //     width: 28vw;
+  //     border:3px solid orange;
+  //     text-align: center;
+  //     transition:transform 1s;
+  //   }
+  //   #shop-now:hover {
+  //     color:yellow;
+  //     font-weight: bolder;
+  //   }
+  // }
+// }
+
+
+
+
+// =========SLIDER DEMO==========
+// .slider {
+//   width:700px;
+//   height:300px;
+//   margin: auto;
+//   overflow: hidden;
+//   .item {
+//     width:100%;
+//     height: 100%;
+//     text-align: center;
+//     line-height: 300px;
+//     color: #fff;
+//     font-size: 30px;
+//   }
+// }
+// .red {
+//   background-color: red;
+// }
+// .blue {
+//   background-color: blue;
+// }
+// .green {
+//   background-color: green;
+// }
+// .black {
+//   background-color: black;
+// }
+// .controllers {
+//   text-align: center;
+// }
+// .controllers span{
+//   display: inline-block;
+//   font-size: 30px;
+//   background-color: #000;
+//   padding: 4px 80px;
+//   margin-top:5px;
+//   color:#fff;
+// }
+
+
+
+// ==============================

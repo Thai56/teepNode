@@ -1,18 +1,15 @@
-
 <html>
 <meta name="viewport" content="width=device-width">
-  <body>
 
-    <section class='home-image-container'>
-      <div class="home-image-text-container">
-        <div class="image-text-wrapper">
-          20% off site wide
-        </div>
-        <div id='shipping'>Free Shipping worldwide</div>
-        <div id='shop-now'><a>Shop Now</a></div>
-      </div>
 
-    </section>
+<div ng-repeat='product in products'>
+    <img src="{{product.image}}" alt="" />
+    <h3>{{product.desc}}</h3>
+    <h2>price : ${{product.price}}</h2>
+</div>
 
-  </body>
+</div>
+
+</body>
+
 </html>

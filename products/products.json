@@ -1,0 +1,243 @@
+[
+  {
+  "id":1,
+  "type":"cap",
+  "style":"cap",
+  "color":"black",
+  "image":"../IMG/caps/teepers_cap_back-black_color-white.jpg",
+  "desc":"teepers black cap with white stitching wear it front back side to side. Got that whole easy e feel about it",
+  "price":35.00,
+  "on_sale":false
+},
+  {
+  "id":2,
+  "type":"cap",
+  "style":"cap",
+  "color":"black_red",
+  "image":"../IMG/caps/teepers-cap_back_blackred-color-white.jpg",
+  "desc":"Keepin it teepers with tha red bill. WARNING.... may greatly increase confidence.... ",
+  "price":35.00,
+  "on_sale":false
+},
+  {
+  "id":3,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_teal",
+  "image":"../IMG/shirts/circleshirt-black-teal.jpg",
+  "desc":"Black background with teal logo : Teepin it lit. This tee right here is well suited for anyone that's an A's fan!",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":4,
+  "type":"shirt",
+  "style":"tee",
+  "color":"blue_orange",
+  "image":"../IMG/shirts/shirtcircle-blue-orange.jpg",
+  "desc":"Blue background with reddish orange logo : Teepin it lit. This tee right here is well suited for anyone that's an Buffalo Bill's fan!",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":5,
+  "type":"shirt",
+  "style":"tee",
+  "color":"blue_yellow",
+  "image":"../IMG/shirts/hellatee-blue-yellow.jpg",
+  "desc":"WARNING : USAGE OF WORD 'HELLA' OUTSIDE OF CALIFORNIA MAY LEAD TO EXCESSIVE TEASING ",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":6,
+  "type":"shirt",
+  "style":"tee",
+  "color":"white_yellow",
+  "image":"../IMG/shirts/hellatee-white-yellow.jpg",
+  "desc":"WARNING : USAGE OF WORD 'HELLA' OUTSIDE OF CALIFORNIA MAY LEAD TO EXCESSIVE TEASING ",
+  "price":12.99,
+  "on_sale":true
+},
+  {
+  "id":7,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_lightgreen",
+  "image":"../IMG/shirts/Justshirt-black-lightgreen.jpg",
+  "desc":"sometimes you want to keep things simple...JUST THE TEEP!!!",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":8,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_lightblue",
+  "image":"../IMG/shirts/justshirt-darkgray-lightblue.jpg",
+  "desc":"sometimes you want to keep things simple...JUST THE TEEP!!!",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":9,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_yellow",
+  "image":"../IMG/shirts/nak-shirt_black-bak-yellow-color.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":10,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_white",
+  "image":"../IMG/shirts/nakshirt-black-white.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":11,
+  "type":"shirt",
+  "style":"tank",
+  "color":"white_teal",
+  "image":"../IMG/shirts/naktank-white-teal.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":12.99,
+  "on_sale":true
+},
+  {
+  "id":12,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_bluegreen",
+  "image":"../IMG/shirts/sok-emshirt-black-bluegreenwhite.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":12.99,
+  "on_sale":true
+},
+  {
+  "id":13,
+  "type":"shirt",
+  "style":"tee",
+  "color":"black_white",
+  "image":"../IMG/shirts/Sok-tee-back-black-color_redwhite.jpg",
+  "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":14,
+  "type":"shirt",
+  "style":"cut-off",
+  "color":"purple_white",
+  "image":"../IMG/shirts/sokcutoff-whitepurp-whitepurpyellow.jpg",
+  "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
+  "price":12.99,
+  "on_sale":true
+},
+  {
+  "id":15,
+  "type":"shirt",
+  "style":"cut-off",
+  "color":"black_white",
+  "image":"../IMG/shirts/sokshortSlv-whiteblack-whiteblackred.jpg",
+  "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
+  "price":12.99,
+  "on_sale":true
+},
+  {
+  "id":15,
+  "type":"shirt",
+  "style":"tee",
+  "color":"grey_black",
+  "image":"../IMG/shirts/teep-logo-shirt-back-gray_logo.jpg",
+  "desc":"Teep push kick logo. A picture is worth a thousand words.",
+  "price":12.99,
+  "on_sale":true
+},
+  {
+  "id":16,
+  "type":"shirt",
+  "style":"tee",
+  "color":"grey_black",
+  "image":"../IMG/shirts/teepshirt-black-teal.jpg",
+  "desc":"Teepin it real with this urban design",
+  "price":28.00,
+  "on_sale":false
+},
+  {
+  "id":17,
+  "type":"shorts",
+  "style":"thai",
+  "color":"black_white",
+  "image":"../IMG/shorts/nak-black_back-white-color.jpg",
+  "desc":"Teep Thai Shorts! The most manliest short shorts you can get away with wearing, yet femenine enough for any of you ladies.",
+  "price":55.00,
+  "on_sale":false
+},
+  {
+  "id":18,
+  "type":"shorts",
+  "style":"thai",
+  "color":"blue_white",
+  "image":"../IMG/shorts/nakshort-blue-white.jpg",
+  "desc":"Ever wanted to walk around in your boxers.... Outside of you own home? Now you can!",
+  "price":55.00,
+  "on_sale":false
+},
+  {
+  "id":19,
+  "type":"shorts",
+  "style":"thai",
+  "color":"black_gold",
+  "image":"../IMG/shorts/nakshorts-black-gold.jpg",
+  "desc":"Ever wanted to walk around in your boxers.... Outside of you own home? Now you can!",
+  "price":55.00,
+  "on_sale":false
+},
+  {
+  "id":20,
+  "type":"sweater",
+  "style":"hoodie",
+  "color":"black_white",
+  "image":"../IMG/sweaters/hoodie_back-black_color-white.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":47.99,
+  "on_sale":false
+},
+  {
+  "id":21,
+  "type":"sweater",
+  "style":"hoodie",
+  "color":"black_gold",
+  "image":"../IMG/sweaters/naksweat-black-yellow.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":47.99,
+  "on_sale":false
+},
+  {
+  "id":22,
+  "type":"sweater",
+  "style":"sweater",
+  "color":"black_white",
+  "image":"../IMG/sweaters/nak-sweat_backblack_col-whte.jpg",
+  "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
+  "price":40.00,
+  "on_sale":false
+},
+  {
+  "id":23,
+  "type":"sweater",
+  "style":"sweater",
+  "color":"black_white",
+  "image":"../IMG/sweaters/soksweat-backblack-colwhitered.jpg",
+  "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
+  "price":40.00,
+  "on_sale":false
+}
+
+]
