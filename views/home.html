@@ -1,10 +1,10 @@
 <html>
 <meta name="viewport" content="width=device-width">
 
-<div ng-controller='homeCtrl'>
+<div>
   <carousel interval="myInterval">
       <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <a ui-sref='{{slide.type}}'><img ng-src="{{slide.image}}" style="margin:auto;"></a>
         <div class="carousel-caption">
           <!-- <h4>Slide {{$index}}</h4> -->
           <!-- <p>{{slide.text}}</p> -->
@@ -14,12 +14,17 @@
 </div>
 
 <div ng-repeat='product in products'>
-    <img src="{{product.image}}" alt="" />
-    <h3>{{product.desc}}</h3>
-    <h2>price : ${{product.price}}</h2>
-</div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+      <img ng-click='clickToOpen(product.image,product.id,product.desc,product.price)'src="{{product.image}}" alt="" />
+      <h3>{{product.desc}}</h3>
+      <h2>price : ${{product.price}}</h2>
+      <ngcart-addtocart id="{{ product.id }}" name="{{ product.type }}" price="{{ product.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart>
+      <a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
+    </div>
 
 </div>
+
+
 
 </body>
 

@@ -1,4 +1,4 @@
-angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate']).config(function($stateProvider,$urlRouterProvider){
+angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate','ngDialog','ngCart']).config(function($stateProvider,$urlRouterProvider){
 // =================================================================================================================================
 // Products
 // =================================================================================================================================
@@ -36,10 +36,17 @@ angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate']).config(function
   templateUrl:'./views/onSale/onSaleTmpl.html',
   controller:'productsCtrl'
 })
-
-
+// =================================================================================================================================
+// Shopping Cart
+//=================================================================================================================================
+.state('cart', {
+  url:'/products/cart',
+  templateUrl:'./views/cart/cartTmpl.html',
+  controller:'productsCtrl'
+})
 
   $urlRouterProvider
   .otherwise('/products')
 
 })
+// png file convert to anything thats white to transparent tool online to help

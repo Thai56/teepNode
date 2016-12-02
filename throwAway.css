@@ -120,3 +120,34 @@
 
 
 // ==============================
+
+
+
+
+<html>
+
+<body>
+    <section class="nav-container">
+        <ul class='list'>
+            <!-- <li><a class='' href='#'>Tees</a></li>
+        <li><a class='' href='#'>Sweaters</a></li>
+        <li><a class='' href='#'>Shorts</a></li> -->
+            <div class="dropdown">
+                <li><a class='drop-btn' href='#'>Products</a></li>
+                <div class="dropdown-content">
+                    <a ui-sref="shirts">Shirts</a>
+                    <a href="#">Sweaters</a>
+                    <a href="#">Caps</a>
+                    <a href="#">Shorts</a>
+                </div>
+            </div>
+
+            <li><a class='' href='#'>On Sale</a></li>
+            <li><a class='' href='#'>Trending</a></li>
+            <li><a class='' href='#'>Cart</a</li>
+            <li><a class='' href='#'>Sign up</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>

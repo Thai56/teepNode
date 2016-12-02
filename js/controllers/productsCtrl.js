@@ -1,4 +1,4 @@
-angular.module('myApp').controller('productsCtrl', function($scope, myService){
+angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, myService){
   $scope.messsage = 'this is the products page'
 
   $scope.getProducts = (function(){
@@ -41,4 +41,15 @@ angular.module('myApp').controller('productsCtrl', function($scope, myService){
       console.log($scope.saleItems)
     })
   }())
+// ====================================================================================================================
+  // DIALOG BOX
+  // ====================================================================================================================
+  $scope.clickToOpen = function (image,id,desc,price) {
+    var newScope = $scope.$new();
+    newScope.image = image;
+    newScope.id = id;
+    newScope.desc = desc;
+    newScope.price = price;
+        ngDialog.open({ template: './views/popupTmpl.html', className: 'ngdialog-theme-default', controller:'homeCtrl', scope: newScope });
+    };
 })
