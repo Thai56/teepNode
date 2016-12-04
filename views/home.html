@@ -6,15 +6,15 @@
       <slide ng-repeat="slide in slides" active="slide.active">
         <a ui-sref='{{slide.type}}'><img ng-src="{{slide.image}}" style="margin:auto;"></a>
         <div class="carousel-caption">
-          <!-- <h4>Slide {{$index}}</h4> -->
-          <!-- <p>{{slide.text}}</p> -->
+          <!-- <h4>Slide {{$index}}</h4> --><br>
+          <h3>{{slide.text}}</h3>
         </div>
       </slide>
     </carousel>
 </div>
 
-<div ng-repeat='product in products'>
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+<div class='center' ng-repeat='product in products'>
+    <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
       <img ng-click='clickToOpen(product.image,product.id,product.desc,product.price)'src="{{product.image}}" alt="" />
       <h3>{{product.desc}}</h3>
       <h2>price : ${{product.price}}</h2>

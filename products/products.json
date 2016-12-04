@@ -63,8 +63,8 @@
   "desc":"WARNING : USAGE OF WORD 'HELLA' OUTSIDE OF CALIFORNIA MAY LEAD TO EXCESSIVE TEASING ",
   "price":12.99,
   "on_sale":true,
-
-"user":""},
+  "user":""
+},
   {
   "id":7,
   "type":"shirt",

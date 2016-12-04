@@ -1,4 +1,4 @@
-angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate','ngDialog','ngCart']).config(function($stateProvider,$urlRouterProvider){
+angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate','ngDialog','ngCart','angularModalService']).config(function($stateProvider,$urlRouterProvider){
 // =================================================================================================================================
 // Products
 // =================================================================================================================================
@@ -43,6 +43,22 @@ angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate','ngDialog','ngCar
   url:'/products/cart',
   templateUrl:'./views/cart/cartTmpl.html',
   controller:'productsCtrl'
+})
+// =================================================================================================================================
+// login
+//=================================================================================================================================
+.state('login', {
+  url:'/login',
+  templateUrl:'./login/loginTmpl.html',
+  controller:'loginCtrl'
+})
+// =================================================================================================================================
+// Register
+//=================================================================================================================================
+.state('register', {
+  url:'/login/register',
+  templateUrl:'./login/registerTmpl.html',
+  controller:'loginCtrl'
 })
 
   $urlRouterProvider

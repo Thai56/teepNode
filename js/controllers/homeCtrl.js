@@ -10,19 +10,23 @@ angular.module('myApp').controller('homeCtrl',function($scope, myService, ngDial
   $scope.slides = [
     {
       image:'../../IMG/shirts/teepshirt-black-teal.jpg',
-      type:'shirts'
+      type:'shirts',
+      text:'Tees'
     },
     {
       image:'../../IMG/caps/teepers-cap_back_blackred-color-white.jpg',
-      type:'caps'
+      type:'caps',
+      text:'Caps'
     },
     {
       image:'../../IMG/sweaters/naksweat-black-yellow.jpg',
-      type:'sweaters'
+      type:'sweaters',
+      text:'Hoodies'
     },
     {
       image:'../../IMG/shorts/nakshorts-black-gold.jpg',
-      type:'shorts'
+      type:'shorts',
+      text:'Thai Shorts'
     }
     ]
 
