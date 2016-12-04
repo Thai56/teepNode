@@ -60,6 +60,14 @@ angular.module('myApp',['ui.router','ui.bootstrap','ngAnimate','ngDialog','ngCar
   templateUrl:'./login/registerTmpl.html',
   controller:'loginCtrl'
 })
+// =================================================================================================================================
+// checkout
+//=================================================================================================================================
+.state('checkout', {
+  url:'/checkout',
+  templateUrl:'./checkout/checkoutTmpl.html',
+  controller:'checkoutCtrl'
+})
 
   $urlRouterProvider
   .otherwise('/products')

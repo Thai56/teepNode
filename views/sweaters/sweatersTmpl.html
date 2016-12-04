@@ -1,5 +1,5 @@
 
-<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='sweater in sweaters'>
+<div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='sweater in sweaters'>
     <img ng-click='clickToOpen(sweater.image,sweater.id,sweater.desc,sweater.price)' src="{{sweater.image}}" alt="" />
     <h3>{{sweater.desc}}</h3>
     <h2>$ {{sweater.price}}</h2>

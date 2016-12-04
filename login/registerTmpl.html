@@ -13,11 +13,11 @@
         </div>
         <hr>
       </div>
-  <input type="text" class="form-control" name="name" placeholder="Username" value="">
-  <input type="text" class="form-control" name="name" placeholder="Password" value="">
-  <input type="text" class="form-control" name="name" placeholder="Confirm Password" value="">
+  <input type="text" class="form-control" ng-model='name' placeholder="Username" >
+  <input type="text" class="form-control" ng-model='pw' placeholder="Password" >
+  <input type="text" class="form-control" ng-model='pwCheck' placeholder="Confirm Password" >
 
   <div class="col-sm-6 col-sm-offset-3">
-    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Submit">
+    <input type="submit" name="login-submit" ng-click='registerUser(name,pw,pwCheck)'id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Submit">
   </div>
 </div>
