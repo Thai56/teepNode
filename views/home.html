@@ -1,28 +1,58 @@
 <html>
-<meta name="viewport" content="width=device-width">
+<!-- <meta name="viewport" content="width=device-width"> -->
+<section class='home-page-container'>
 
-<div>
+  <div class='carousel-container'>
+    <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <a ui-sref='{{slide.type}}'><img ng-src="{{slide.image}}" style="margin:auto;"></a>
+          <div class="carousel-caption">
+            <!-- <h4>Slide {{$index}}</h4> --><br>
+            <h3 class='carousel-text'>{{slide.text}}</h3>
+          </div>
+        </slide>
+      </carousel>
+  </div>
+
+
+  <!-- <input type="text" ng-model='search.type'> -->
+  <section class='even'>
+    <div class='center' ng-repeat='product in products | filter : search'>
+        <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+          <img ng-click='clickToOpen(product.image,product.id,product.desc,product.price)'src="{{product.image}}" alt="" />
+          <p>{{product.type}}/{{product.color}}</p>
+          <h5>$ {{product.price}}</h5>
+        </div>
+
+    </div>
+  </section>
+
+</section>
+
+<!-- <div class='carousel-container'>
   <carousel interval="myInterval">
       <slide ng-repeat="slide in slides" active="slide.active">
         <a ui-sref='{{slide.type}}'><img ng-src="{{slide.image}}" style="margin:auto;"></a>
-        <div class="carousel-caption">
-          <!-- <h4>Slide {{$index}}</h4> --><br>
-          <h3>{{slide.text}}</h3>
+        <div class="carousel-caption"> -->
+          <!-- <h4>Slide {{$index}}</h4> -->
+          <!-- <h3 class='carousel-text'>{{slide.text}}</h3>
         </div>
       </slide>
     </carousel>
-</div>
+</div> -->
+<!-- <input type="text" ng-model='search.type'> -->
+<!-- <section class='even'>
+  <div class='center' ng-repeat='product in products | filter : search'>
+      <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
+        <img ng-click='clickToOpen(product.image,product.id,product.desc,product.price)'src="{{product.image}}" alt="" />
+        <p>{{product.type}}/{{product.color}}</p>
+        <h5>$ {{product.price}}</h5>
+      </div>
 
-<div class='center' ng-repeat='product in products'>
-    <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 ">
-      <img ng-click='clickToOpen(product.image,product.id,product.desc,product.price)'src="{{product.image}}" alt="" />
-      <h3>{{product.desc}}</h3>
-      <h2>price : ${{product.price}}</h2>
-      <ngcart-addtocart id="{{ product.id }}" name="{{ product.type }}" price="{{ product.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart>
-      <a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
-    </div>
+  </div>
+</section> -->
 
-</div>
+
 
 
 

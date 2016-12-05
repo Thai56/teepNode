@@ -9,8 +9,11 @@ const checkOut = 'checkout'
     }
   };
 
-  $scope.registerUser = function(user,pw){
-  loginService.registerUser(user,pw,pwCheck)
+  $scope.registerUser = function(user,pw,pwCheck){
+   $scope.registered = loginService.registerUser(user,pw,pwCheck);
+   if($scope.registered){
+     $state.go('login')
+   }
   }
 
 })

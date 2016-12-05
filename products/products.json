@@ -8,7 +8,7 @@
   "desc":"teepers black cap with white stitching wear it front back side to side. Got that whole easy e feel about it",
   "price":35.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":2,
@@ -19,7 +19,7 @@
   "desc":"Keepin it teepers with tha red bill. WARNING.... may greatly increase confidence.... ",
   "price":35.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":3,
@@ -30,7 +30,7 @@
   "desc":"Black background with teal logo : Teepin it lit. This tee right here is well suited for anyone that's an A's fan!",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":4,
@@ -41,7 +41,7 @@
   "desc":"Blue background with reddish orange logo : Teepin it lit. This tee right here is well suited for anyone that's an Buffalo Bill's fan!",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":5,
@@ -52,7 +52,7 @@
   "desc":"WARNING : USAGE OF WORD 'HELLA' OUTSIDE OF CALIFORNIA MAY LEAD TO EXCESSIVE TEASING ",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":6,
@@ -63,7 +63,7 @@
   "desc":"WARNING : USAGE OF WORD 'HELLA' OUTSIDE OF CALIFORNIA MAY LEAD TO EXCESSIVE TEASING ",
   "price":12.99,
   "on_sale":true,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":7,
@@ -74,7 +74,7 @@
   "desc":"sometimes you want to keep things simple...JUST THE TEEP!!!",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":8,
@@ -85,7 +85,7 @@
   "desc":"sometimes you want to keep things simple...JUST THE TEEP!!!",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":9,
@@ -96,7 +96,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":10,
@@ -107,7 +107,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":11,
@@ -118,7 +118,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":12.99,
   "on_sale":true,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":12,
@@ -129,7 +129,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":12.99,
   "on_sale":true,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":13,
@@ -140,7 +140,7 @@
   "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":14,
@@ -151,7 +151,7 @@
   "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
   "price":12.99,
   "on_sale":true,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":15,
@@ -162,7 +162,7 @@
   "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
   "price":12.99,
   "on_sale":true,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":15,
@@ -173,7 +173,7 @@
   "desc":"Teep push kick logo. A picture is worth a thousand words.",
   "price":12.99,
   "on_sale":true,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":16,
@@ -184,7 +184,7 @@
   "desc":"Teepin it real with this urban design",
   "price":28.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":17,
@@ -195,7 +195,7 @@
   "desc":"Teep Thai Shorts! The most manliest short shorts you can get away with wearing, yet femenine enough for any of you ladies.",
   "price":55.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":18,
@@ -206,7 +206,7 @@
   "desc":"Ever wanted to walk around in your boxers.... Outside of you own home? Now you can!",
   "price":55.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":19,
@@ -217,7 +217,7 @@
   "desc":"Ever wanted to walk around in your boxers.... Outside of you own home? Now you can!",
   "price":55.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":20,
@@ -228,7 +228,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":47.99,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":21,
@@ -239,7 +239,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":47.99,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":22,
@@ -250,7 +250,7 @@
   "desc":"Nak-Muay : one who is a practitioner in the noble art of Muay-Thai",
   "price":40.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 },
   {
   "id":23,
@@ -261,7 +261,7 @@
   "desc":"SOK : one of the many weapons in the art of Muay-Thai, known as the 'elbow'",
   "price":40.00,
   "on_sale":false,
-  "user":""
+  "size":["small","medium","large"]
 }
 
 ]

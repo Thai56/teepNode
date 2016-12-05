@@ -1,8 +1,8 @@
+<section class='shirts-page-wrapper'>
+  <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='shirt in shirts | filter: search'>
+      <img class='col-xs-12 col-sm-12' ng-click='clickToOpen(shirt.image,shirt.id,shirt.desc,shirt.price)' src="{{shirt.image}}" alt="" />
+      <p>{{shirt.type}}/{{shirt.color}}</p>
+      <h5>$ {{shirt.price}}</h5>
+  </div>
 
-<div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='shirt in shirts'>
-    <img ng-click='clickToOpen(shirt.image,shirt.id,shirt.desc,shirt.price)' src="{{shirt.image}}" alt="" />
-    <h3>{{shirt.desc}}</h3>
-    <h2>$ {{shirt.price}}</h2>
-    <ngcart-addtocart id="{{ shirt.id }}" name="{{ shirt.type }}" price="{{ shirt.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart>
-    <a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
-</div>
+</section>

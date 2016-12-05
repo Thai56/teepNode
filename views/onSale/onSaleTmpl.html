@@ -1,7 +1,11 @@
-<div class=" product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='item in saleItems'>
-    <img ng-click='clickToOpen(item.image,item.id,item.desc,item.price)' src="{{item.image}}" alt="" />
-    <h3>{{item.desc}}</h3>
-    <h2>$ {{item.price}}</h2>
-    <ngcart-addtocart id="{{ item.id }}" name="{{ item.type }}" price="{{ item.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart>
-    <a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
-</div>
+<section class='on-sale-page-wrapper'>
+
+  <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='item in saleItems | filter: search'>
+
+      <img class='col-xs-12 col-sm-12' ng-click='clickToOpen(item.image,item.id,item.desc,item.price)' src="{{item.image}}" alt="" />
+      <p>{{item.type}}/{{item.color}}</p>
+      <h5>$ {{item.price}}</h5>
+
+  </div>
+
+</section>

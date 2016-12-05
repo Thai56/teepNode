@@ -1,23 +1,28 @@
-<div class="register-log-in-container">
-  <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <div class="panel panel-login">
-      <div class="panel-heading">
-        <div class="row">
-          <div class="col-xs-6">
-            <a ui-sref='login' class="active">Login</a>
+<section class='continer'>
+  <div class="jumbotron">
+    <div class="register-log-in-container">
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div id='panel-login' class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a ui-sref='login' class="active">Login</a>
+              </div>
+              <div class="col-xs-6">
+                <a ui-sef='register'>Register</a>
+              </div>
+            </div>
+            <hr>
           </div>
-          <div class="col-xs-6">
-            <a ui-sef='register'>Register</a>
-          </div>
-        </div>
-        <hr>
-      </div>
-  <input type="text" class="form-control" ng-model='name' placeholder="Username" >
-  <input type="text" class="form-control" ng-model='pw' placeholder="Password" >
-  <input type="text" class="form-control" ng-model='pwCheck' placeholder="Confirm Password" >
+      <input type="text" class="form-control" ng-model='name' placeholder="Username" ><br>
+      <input type="text" class="form-control" ng-model='pw' placeholder="Password" ><br>
+      <input type="text" class="form-control" ng-model='pwCheck' placeholder="Confirm Password" ><br>
 
-  <div class="col-sm-6 col-sm-offset-3">
-    <input type="submit" name="login-submit" ng-click='registerUser(name,pw,pwCheck)'id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Submit">
+      <div class="col-sm-6 col-sm-offset-3">
+        <input type="submit" name="login-submit" ng-click='registerUser(name,pw,pwCheck)'id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Submit">
+      </div>
+    </div>
+
   </div>
-</div>
+</section>

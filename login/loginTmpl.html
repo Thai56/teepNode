@@ -1,25 +1,32 @@
-<div class="register-log-in-container">
-  <div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <div ng-controller='loginCtrl' class="panel panel-login">
-      <div class="panel-heading">
-        <div class="row">
-          <div class="col-xs-6">
-            <a ui-sref="login" class="active" id="login-form-link">Login</a>
-          </div>
-          <div class="col-xs-6">
-            <a ui-sref="register" id="register-form-link">Register</a>
+<section class='container'>
+  <div class="jumbotron">
+    <!-- <div class="register-log-in-container"> -->
+      <!-- <div class="col-md-6 col-md-offset-3"> -->
+        <div ng-controller='loginCtrl'id='panel-login-page' class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a ui-sref="login" class="active" id="login-form-link">Login</a>
+              </div>
+              <div class="col-xs-6">
+                <a ui-sref="register" id="register-form-link">Register</a>
+              </div>
+            </div>
+            <hr>
           </div>
         </div>
-        <hr>
+      <input id='login-username' type="text" class="form-control" name="name" ng-model='user' placeholder="Username" value=""><br>
+      <input id='login-password' type="password" class="form-control" name="name" ng-model='pw' placeholder="Password" value=""><br>
+      <div class="form-group text-center">
+        <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+        <label for="remember"> Remember Me</label>
+        <div class="col-sm-6 col-sm-offset-3">
+          <input type="submit" name="login-submit" ng-click='loginUser(user,pw)'id="login-submit" tabindex="4" class="form-control btn btn-primary" value="Submit">
+        </div>
       </div>
-  <input type="text" class="form-control" name="name" ng-model='user' placeholder="Username" value="">
-  <input type="text" class="form-control" name="name" ng-model='pw' placeholder="Password" value="">
-  <div class="form-group text-center">
-    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-    <label for="remember"> Remember Me</label>
+
+      <!-- </div> -->
+    <!-- </div> -->
   </div>
-  <div class="col-sm-6 col-sm-offset-3">
-    <button class='btn btn-primary' ng-click='loginUser(user,pw)'>Login</button>
-  </div>
-</div>
+
+</section>

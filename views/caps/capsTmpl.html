@@ -1,8 +1,10 @@
-
-<div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='hat in hats'>
-    <img ng-click='clickToOpen(hat.image,hat.id,hat.desc,hat.price)' src="{{hat.image}}" alt="" />
-    {{hat.desc}}
-    {{hat.price}}
-    <ngcart-addtocart id="{{ hat.id }}" name="{{ hat.type }}" price="{{ hat.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart>
-    <a ui-sref="cart"><button class="btn btn-success" name="button">Continue to checkout</button></a>
-</div>
+<section class='caps-page-wrapper'>
+  <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='hat in hats | filter: search'>
+      <img ng-click='clickToOpen(hat.image,hat.id,hat.desc,hat.price)' src="{{hat.image}}" alt="" />
+    <!-- <h2 class='oleo red'>{{hat.desc}}</h2> -->
+      <!-- <h2 class='oleo red'>$ {{hat.price}}</h2> -->
+      <!-- <ngcart-addtocart id="{{ hat.id }}" name="{{ hat.type }}" price="{{ hat.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart> -->
+      <!-- <br> -->
+      <!-- <a ui-sref="cart"><button id='product-checkout-btn' class="btn btn-primary" name="button">Continue to checkout</button></a> -->
+  </div>
+</section>

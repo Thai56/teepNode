@@ -1,4 +1,4 @@
-angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, myService){
+angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, myService,loginService,$state){
   $scope.messsage = 'this is the products page'
 
   $scope.getProducts = (function(){
@@ -52,4 +52,44 @@ angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, my
     newScope.price = price;
         ngDialog.open({ template: './views/popupTmpl.html', className: 'ngdialog-theme-default', controller:'homeCtrl', scope: newScope });
     };
+
+    // ====================================================================================================================
+      // options
+      // ====================================================================================================================
+    $scope.options = [{
+    Label:'size',
+    notAnOption:true
+    },
+    {
+    Label:'small',
+    Value:'product.size[0]'
+    },
+    {
+    Label:'medium',
+    Value:'product.size[1]'
+    },
+    {
+    Label:'large',
+    Value:'product.size[2]'
+    }
+  ];
+
+  $scope.signInFirst = function(){
+    $scope.signedIn = loginService.checkOutAccess();
+    if(!$scope.signedIn ){
+      $state.go('login')
+      console.log('if statement', $scope.signedIn);
+    }
+    else if($scope.signedIn ){
+      $state.go('checkout')
+      console.log('else if statement', $scope.signedIn);
+    }
+
+  }
+
+  $scope.isUserSignedIn = function(){
+    $scope.loggedIn = loginService.isUserSignedIn();
+    console.log('this is loggedIn', $scope.loggedIn)
+  }
+  $scope.isUserSignedIn();
 })

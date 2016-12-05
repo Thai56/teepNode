@@ -1,8 +1,8 @@
+<section class='shorts-page-wrapper'>
+  <div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='short in shorts | filter: search'>
+      <img ng-click='clickToOpen(short.image,short.id,short.desc,short.price)' src="{{short.image}}" alt="" />
+      <p>{{short.type}}/{{short.color}}</p>
+      <h5>$ {{short.price}}</h5>
+  </div>
 
-<div class="product-wrapper col-xs-12 col-sm-12 col-md-6 col-lg-4 " ng-repeat='short in shorts'>
-    <img ng-click='clickToOpen(short.image,short.id,short.desc,short.price)' src="{{short.image}}" alt="" />
-    <h3>{{short.desc}}</h3>
-    <h2>$ {{short.price}}</h2>
-    <ngcart-addtocart id="{{ short.id }}" name="{{ short.type }}" price="{{ short.price }}" quantity="1" quantity-max="30" data="item">Add To Cart</ngcart-addtocart>
-    <a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
-</div>
+</section>

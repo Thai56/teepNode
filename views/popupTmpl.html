@@ -1,9 +1,21 @@
 
-<div class="">
-  <img class ='dialog-product-img col-xs-6 col-sm-6 col-md-6' src="{{image}}" alt="" />
-  <h2>id: {{id}}</h2>
-  <h3>{{desc}}</h2>
-  <h3>$ {{price}}</h2>
-  <ngcart-addtocart id="{{ id }}" name="{{ name }}" price="{{ price }}" quantity="1" quantity-max="30" data="item">add to cart</ngcart-addtocart>
-  <a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
+<div id="dialog-container">
+
+  <section class='container'>
+    <div class="jumbotron">
+        <img class ='dialog-product-img col-xs-6 col-sm-6 col-md-6' src="{{image}}" alt="" />
+      <section class='product-info-dialog'>
+        <h2>id: {{id}}</h2>
+        <h3>{{desc}}</h2>
+        <h3>$ {{price}}</h2>
+      </section>
+      <select class="input-medium" value='size' ng-options='product.Value as product.Label for product in options' ng-model='size'>
+      </select>
+      <ngcart-addtocart id="{{ id }}" name="{{ name }}" price="{{ price }}" quantity="1" quantity-max="30" data="item">add to cart</ngcart-addtocart>
+      <br><a ui-sref="cart"><button class="btn btn-primary" name="button">Continue to checkout</button></a>
+    </div>
+
+  </section>
+
+
 </div>
