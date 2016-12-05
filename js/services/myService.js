@@ -30,7 +30,7 @@ angular.module('myApp').service('myService', function($http,$q){
       productsArr.forEach(product => {
         if(product.type === cap){
           hatArr.push(product)
-          console.log('this is har array',hatArr)
+          // console.log('this is har array',hatArr)
           defer.resolve(hatArr)
         }
       })
@@ -50,7 +50,7 @@ angular.module('myApp').service('myService', function($http,$q){
       productsArr.forEach(product => {
         if(product.type === shirt){
           shirtArr.push(product)
-          console.log('this is the shirt array',shirtArr)
+          // console.log('this is the shirt array',shirtArr)
           defer.resolve(shirtArr)
         }
       })
@@ -70,7 +70,7 @@ angular.module('myApp').service('myService', function($http,$q){
       productsArr.forEach(product => {
         if(product.type === sweater){
           sweaterArr.push(product)
-          console.log('this is the sweater array',sweaterArr)
+          // console.log('this is the sweater array',sweaterArr)
           defer.resolve(sweaterArr)
         }
       })
@@ -90,7 +90,7 @@ angular.module('myApp').service('myService', function($http,$q){
       productsArr.forEach(product => {
         if(product.type === shorts){
           shortArr.push(product)
-          console.log('this is the short array',shortArr)
+          // console.log('this is the short array',shortArr)
           defer.resolve(shortArr)
         }
       })
@@ -110,7 +110,7 @@ angular.module('myApp').service('myService', function($http,$q){
       productsArr.forEach(product => {
         if(product.on_sale === true){
           onSale.push(product)
-          console.log('this is the saleItem array', onSale)
+          // console.log('this is the saleItem array', onSale)
           defer.resolve(onSale)
         }
       })
