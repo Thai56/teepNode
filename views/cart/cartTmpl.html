@@ -1,18 +1,21 @@
+<div class="cart-container">
+  <section class='container'>
+    <div class="jumbotron">
+      <h1> this is the cart page</h1>
 
-<section class='container'>
-  <div class="jumbotron">
-    <h1> this is the cart page</h1>
-    
-    <ngcart-cart></ngcart-cart>
+      <ngcart-cart></ngcart-cart><br><br>
 
-    <!-- <ngcart-checkout service='http' settings="{url:'/#/checkout'}" >checkout</ngcart-checkout> -->
-    <div class="">
-      <button type="button" class='btn btn-danger' ng-click='signInFirst()' name="button">Proceed to checkoout</button>
-    </div>
-  </section>
+      <!-- <ngcart-checkout service='http' settings="{url:'/#/checkout'}" >checkout</ngcart-checkout> -->
+      <div class="cart-proceed-button">
+        <button type="button" class='btn btn-danger' ng-click='signInFirst()' name="button">Proceed to checkoout</button>
+      </div>
+        </div>
+    </section>
+
+</div>
 
 
-  </div>
+
 
 <!-- <a ui-sref='login'></a> -->
 

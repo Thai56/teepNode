@@ -1,0 +1,53 @@
+<section class='container'>
+  <div class="jumbotron" style="margin-top:40px">
+    <h1 style="text-align:center">Enter payment info</h1>
+    <div class=" row checkout-card form-group">
+      <label for="credit-card-type">Credit Card Type </label><br>
+      <select class='form-control' id='credit-card-type' ng-model='type'>
+          <option value=''>-- Select One --</option>
+          <option value='american'>AMERICAN EXPRESS</OPTION>
+          <OPTION VALUE='visa'>VISA</option>
+          <option value='master'>Master Card</option>
+          <option value='discover'>Discover</option>
+      </select><br>
+      <label for="expiration">Card Expiration</label><br>
+      <select class="form-control" ng-model='month' id='expiration-month'>
+        <option value=''>Month</option>
+        <option value='jan'>01 January</option>
+        <option value='feb'>02 February</option>
+        <option value='mar'>03 March</option>
+        <option value='apr'>04 April</option>
+        <option value='may'>05 May</option>
+        <option value='jun'>06 June</option>
+        <option value='jul'>07 July</option>
+        <option value='aug'>08 August</option>
+        <option value='sept'>09 September</option>
+        <option value='oct'>10 October</option>
+        <option value='nov'>11 November</option>
+        <option value='dec'>12 December</option>
+        <option value=''></option>
+      </select>
+      <select class="form-control" id='expiration-year' ng-model='year'>
+        <option value=''>2016</option>
+        <option value=''>2017</option>
+        <option value=''>2018</option>
+        <option value=''>2019</option>
+        <option value=''>2020</option>
+        <option value=''>2021</option>
+        <option value=''>2022</option>
+        <option value=''>2023</option>
+        <option value=''>2024</option>
+        <option value=''>2025</option>
+        <option value=''>2026</option>
+      </select><br>
+      <br>
+      <label for="payment-fullname">Name on Card</label>
+      <input id='payment-fullname' type="text" class="form-control" name="name" ng-model='name' placeholder="full name on card" value=""><br>
+      <label for="payment-cardnumber">Card Number</label>
+      <input id='payment-cardnumber' type="password" class="form-control" name="name" ng-model='num' placeholder="card number" value=""><br>
+      <label for="cvn">Card Verification Number</label>
+      <input class='form-control' id='cvn' type="password">
+    </div>
+    <button class='btn btn-warning'type="button" ng-click='processed(type,month,year,name,num)'>Continue</button>
+  </div>
+</section>

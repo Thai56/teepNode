@@ -1,57 +1,59 @@
-<h1>This is the following checkout </h1>
+<div class="checkout-container">
+  <h1>This is the following checkout </h1>
 
-<section class='container'>
-  <div class="jumbotron">
-    <div class="cart-summary">
-      <ngcart-summary template-url='../node_modules/ngCart/template/ngCart/summary.html'>
-      </ngcart-summary>
-    </div>
-
-    <section class="container">
-      <div class=" row checkout-name form-group">
-        <label for="firstname">firstname:</label><br>
-        <input type="text" name="name" id='firstname' ng-model='firstname'required><br>
-        <label for="lastname">lastname:</label><br>
-        <input type="text" name="name" id='lastname' ng-model='lastname'required>
+  <section class='container'>
+    <div class="jumbotron">
+      <div class="cart-summary">
+        <ngcart-summary template-url='../node_modules/ngCart/template/ngCart/summary.html'>
+        </ngcart-summary>
       </div>
-      <div class=" row checkout-address form-group">
-        <label class='required' for="address">address:</label><br>
-        <input type="text" name="name" id='address' ng-model='address' required><br>
-        <label class='required' for="state">State (select one):</label>
-          <select class="form-control" id="state">
-            <option>CA</option>
-            <option>UT</option>
-            <option>WA</option>
-            <option>AR</option>
+
+      <section class="container">
+        <div class=" row checkout-name form-group">
+          <label for="firstname"><span style='color:orange'>*</span> firstname:</label><br>
+          <input type="text" name="name" id='firstname' ng-model='firstname'required><br>
+          <label for="lastname"><span style='color:orange'>*</span> lastname:</label><br>
+          <input type="text" name="name" id='lastname' ng-model='lastname'required>
+        </div>
+        <div class=" row checkout-address form-group">
+          <label class='required' for="address"><span style='color:orange'>*</span> address:</label><br>
+          <input type="text" name="name" id='address' ng-model='address' required><br>
+          <label class='required' for="state"><span style='color:orange'>*</span> State (select one):</label>
+            <select class="form-control" id="state">
+              <option>CA</option>
+              <option>UT</option>
+              <option>WA</option>
+              <option>AR</option>
+            </select>
+            <br>
+        </div>
+        <div class=" row checkout-postal form-group">
+          <label for="postal/zip"><span style='color:orange'>*</span> postal/zip:</label><br>
+          <input type="text" name="name" id='postal/zip' ng-model='zip' required><br>
+          <label for="country"><span style='color:orange'>*</span> country:</label><br>
+          <select class="form-control" id="country" ng-model='country' required>
+            <option>US</option>
+            <option>CANADA</option>
+            <option>UNITED KINGDOM</option>
+            <option>PAKISTAN</option>
           </select>
-          <br>
-      </div>
-      <div class=" row checkout-postal form-group">
-        <label for="postal/zip">postal/zip:</label><br>
-        <input type="text" name="name" id='postal/zip' ng-model='zip' required><br>
-        <label for="country">country:</label><br>
-        <select class="form-control" id="country" ng-model='country' required>
-          <option>US</option>
-          <option>CANADA</option>
-          <option>UNITED KINGDOM</option>
-          <option>PAKISTAN</option>
-        </select>
-      </div>
-      <div class=" row checkout-number form-group">
-        <label for="telephone">telephone:</label><br>
-        <input type="text" name="name" id='telephone'><br>
-        <label for="fax">fax:</label><br>
-        <input type="text" name="name" id='fax'>
-      </div>
-      <div class=" row checkout-ship form-group">
-        <label for="ship to this address">ship to this address:</label><br>
-        <input type="radio" name="name" id='ship to this address'><br>
-        <label for="ship to different address">ship to different address:</label><br>
-        <input type="radio" name="name" id='ship to different address'>
-      </div>
+        </div>
+        <div class=" row checkout-number form-group">
+          <label for="telephone">telephone:</label><br>
+          <input type="text" name="name" id='telephone'><br>
+          <label for="fax">fax:</label><br>
+          <input type="text" name="name" id='fax'>
+        </div>
+        <div class=" row checkout-ship form-group">
+          <label for="ship to this address">ship to this address:</label><br>
+          <input type="radio" name="name" id='ship to this address'><br>
+          <label for="ship to different address">ship to different address:</label><br>
+          <input type="radio" name="name" id='ship to different address'>
+        </div>
 
-      <button type="button" name="button" ng-click='alert(firstname, address, country, zip)'>Submit</button>
-    </section>
+        <button type="button" class='btn checkout-submit-button' ng-click='alert(firstname, address, country, zip)'>Submit</button>
+      </section>
 
-  </div>
-</section>
+    </div>
+  </section>
+</div>

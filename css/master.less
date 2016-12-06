@@ -302,11 +302,32 @@ header {
     width: 98%;
     height:564px;
     // background: lightgray;
-    border: 2px solid gray;
+    // border: 2px solid gray;
     border-radius: 8px;
     margin:4px;
     text-align: center;
     height:100%;
+    .container {
+      background:white;
+      border-radius: 10px;
+    }
+
+    .jumbotron {
+      background:none;
+      background: white;
+      // border-radius: 10px;
+      .product-info-dialog {
+        width:32%;
+        background:white;
+        float:right;
+        border-radius: 10px;
+      }
+      #dialog-checkout-btn {
+        background:@red;
+        color:white;
+        border-radius: 0;
+      }
+    }
     .input-medium {
       margin:5px;
     }
@@ -314,6 +335,10 @@ header {
       height:625px;
       width:655px;
     }
+  }
+  #add-cart-btn {
+    background: @red;
+    color: white;
   }
 
 // ============================================================================================================
@@ -439,6 +464,19 @@ header {
 // ============================================================================================================
 .cart-container {
   // background: lightgray;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  .container {
+    margin-top:60px;
+    background:none;
+    .jumbotron {
+      background:none;
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 .table-responsive {
   background: lightgoldenrodyellow;
@@ -446,6 +484,10 @@ header {
 .cart-summary {
   float:right;
   width:80x;
+}
+.cart-proceed-button{
+  width: 100%;
+  text-align: center;
 }
 // ============================================================================================================
   // login page/state
@@ -464,6 +506,36 @@ header {
   }
   #panel-login-page {
     background: none;
+  }
+  .login-container {
+    .container {
+      margin-top: 60px;
+      background: none;
+      .jumbotron {
+        margin: auto;
+        background: none;
+        width: 40%;
+        a {
+          color:white;
+        }
+        .login-link-container {
+          // background:white;
+          color:white;
+        }
+      }
+    }
+  }
+  .register-container {
+    margin-top:60px;
+    .container {
+      background:none;
+      .jumbotron {
+        background:none;
+        a {
+          color:white;
+        }
+      }
+    }
   }
 // =============================================================================================================================================
 // onsale tag
@@ -501,6 +573,40 @@ header {
 // =============================================================================================================================================
 .cart-summary {
   right:2px;
+}
+#expiration-month {
+  width:49%;
+  display: inline-block;
+}
+#expiration-year {
+  width:49%;
+  display: inline-block;
+}
+#cvn {
+  width: 10%;
+}
+.checkout-container {
+  h1 {
+    text-align: center;
+  }
+  .container {
+    background:none;
+    .jumbotron {
+      color:orange;
+      width:60%;
+      margin: auto;
+      background:none;
+      input {
+        color:black;
+      }
+      .checkout-submit-button {
+        background: @red;
+        color:white;
+
+      }
+    }
+  }
+
 }
 
 // MEDIA QUERIES

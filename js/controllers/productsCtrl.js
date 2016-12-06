@@ -4,7 +4,7 @@ angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, my
   $scope.getProducts = (function(){
     myService.getProducts().then( (response) => {
       $scope.products = response;
-      console.log($scope.products)
+      // console.log($scope.products)
     })
   }())
 
@@ -12,33 +12,33 @@ angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, my
   $scope.getHats = (function() {
     myService.getHats().then( (response) => {
       $scope.hats = response;
-      console.log($scope.hats)
+      // console.log($scope.hats)
     })
   }())
 
   $scope.getShirts = (function() {
     myService.getShirts().then( (response) => {
       $scope.shirts = response;
-      console.log($scope.shirts)
+      // console.log($scope.shirts)
     })
   }())
 
   $scope.getSweaters = (function() {
     myService.getSweaters().then( (response) => {
       $scope.sweaters = response;
-      console.log($scope.sweaters)
+      // console.log($scope.sweaters)
     })
   }())
   $scope.getShorts = (function() {
     myService.getShorts().then( (response) => {
       $scope.shorts = response;
-      console.log($scope.shorts)
+      // console.log($scope.shorts)
     })
   }())
   $scope.getOnSaleItems = (function() {
     myService.getOnSaleItems().then( (response) => {
       $scope.saleItems = response;
-      console.log($scope.saleItems)
+      // console.log($scope.saleItems)
     })
   }())
 // ====================================================================================================================
@@ -78,18 +78,18 @@ angular.module('myApp').controller('productsCtrl', function($scope, ngDialog, my
     $scope.signedIn = loginService.checkOutAccess();
     if(!$scope.signedIn ){
       $state.go('login')
-      console.log('if statement', $scope.signedIn);
+      // console.log('if statement', $scope.signedIn);
     }
     else if($scope.signedIn ){
       $state.go('checkout')
-      console.log('else if statement', $scope.signedIn);
+      // console.log('else if statement', $scope.signedIn);
     }
 
   }
 
   $scope.isUserSignedIn = function(){
     $scope.loggedIn = loginService.isUserSignedIn();
-    console.log('this is loggedIn', $scope.loggedIn)
+    // console.log('this is loggedIn', $scope.loggedIn)
   }
   $scope.isUserSignedIn();
 })
