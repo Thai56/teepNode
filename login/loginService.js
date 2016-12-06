@@ -26,13 +26,13 @@ angular.module('myApp').service('loginService',function($http,$q,$state){
       var userMatch = JSON.parse(localStorage.getItem(user))
       console.log(userMatch)
       if(!userMatch){
-        alert('please enter a valid username and passowrd')
+        swal('error','please enter a valid username and password else click "register" to register','error')
       }
       else if (userMatch.name !== user || userMatch.password !== pw){
-        alert('there is no matching username and password')
+        swal('there is no matching username and password')
       }
       else {
-        alert('you have successfully signed in!')
+        swal('Login a Success!','you have successfully signed in!','success')
        proceedToCheckOut = true
        signedIn = true;
        currentUser = userMatch.name;
@@ -89,10 +89,10 @@ angular.module('myApp').service('loginService',function($http,$q,$state){
 
   this.registerUser = function(name,pw,pwCheck) {
     if(!name || !pw || !pwCheck){
-      alert('please fill out the following fields')
+      swal('required fields incomplete','please fill out the following fields','warning')
     }
     else if(pw !== pwCheck){
-      alert('your passwords are not matching')
+      swal('error','your passwords are not matching','error')
     }
     else {
       storage.setItem(name,JSON.stringify({
@@ -101,7 +101,7 @@ angular.module('myApp').service('loginService',function($http,$q,$state){
       })
       )
       isRegistered = true;
-      alert('you have successfully made a user account!')
+      swal('congratulations','you have successfully made a user account!','success')
     }
     return isRegistered
   }
@@ -109,10 +109,10 @@ angular.module('myApp').service('loginService',function($http,$q,$state){
 
   this.checkOutAccess = function() {
     if(!signedIn){
-      alert('you must first sign in')
+      swal('Log into your account','you must first sign in','warning')
     }
     else if (signedIn === true) {
-      alert('you are already signed in')
+      swal('success','you are already signed in','success')
       // $state.go('checkout')
     }
     return signedIn;

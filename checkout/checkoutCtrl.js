@@ -3,19 +3,26 @@ angular.module('myApp').controller('checkoutCtrl',function($scope,$state){
   $scope.alert = function(name, addrs, country, zip) {
     console.log(country)
     if(!name || !addrs || !country || !zip){
-      alert('please fill out the following fields')
+      swal('required firelds incomplete','please fill out the following fields',"warning")
     }
     else {
-    alert(`Thank you ${name} for your order! Your order will ship to ${addrs} ${zip}`)
+    // swal('Thank you' + name + 'for your order! Your order will ship to '+ addrs + ' ' + zip,'success')
+    swal('success',`Thank you ${name} for your order! Your order will ship to ${addrs} ${zip}`,'success')
+      // {
+      // title:'you did it!',
+      // text:,
+      // text:'thank you for your purchas is being process'
+      // type:'success'
+    // })
     $state.go('payment')
   }
   }
   $scope.processed = function(type,month,year,name,num) {
     if(!type || !name || !num){
-      alert('please fill out the following fields')
+      swal('required fields incomplete','please fill out the following fields','warning')
     }
     else {
-      alert('thank you. your payment has been processed!')
+      swal('success','your payment has been processed!','success')
       $state.go('home')
     }
   }
@@ -29,6 +36,6 @@ angular.module('myApp').controller('checkoutCtrl',function($scope,$state){
       size:size
     })
     console.log($scope.productArr)
-    alert('your product has been added')
+    swal('your product has been added')
   }
 })
